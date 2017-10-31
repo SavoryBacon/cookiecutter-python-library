@@ -1,0 +1,14 @@
+{
+    "project_name": "project-name",
+    "repo_name": "module_name",
+    "author_name": "Your Name",
+    "username": "Your userid",
+    "email": "Your email",
+    "description": "A short description of the project.",
+    "version": "0.1.0",
+    "year": "2016",
+    "release_date": "mm/dd/yyyy",
+    "requests": "y",
+    "script": "n",
+    "create_virtenv": "y"
+}
