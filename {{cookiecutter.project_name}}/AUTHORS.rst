@@ -5,7 +5,7 @@ Credits
 Development Lead
 ----------------
 
-* {{ cookiecutter.author_name }} <{{ cookiecutter.email }}>
+* {{ cookiecutter.author_name }} <{{ cookiecutter.username }}@tdstelecom.com>
 
 Contributors
 ------------

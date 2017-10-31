@@ -43,7 +43,7 @@ setup(
     description="{{ cookiecutter.description }}",
     long_description=readme + '\n\n' + history,
     author="{{ cookiecutter.author_name }}",
-    author_email='{{ cookiecutter.email }}',
+    author_email='{{ cookiecutter.username }}@tdstelecom.com',
     url='https://wiki.tds.net/display/admnetapps/{{ cookiecutter.project_name }}',
     packages=[
         '{{ cookiecutter.repo_name }}',
@@ -55,7 +55,7 @@ setup(
     {% if cookiecutter.script == "y" -%}
     entry_points={
         'console_scripts': [
-            '{{ cookiecutter.repo_name }}={{ cookiecutter.repo_name }}.{{ cookiecutter.repo_name }}:main', # You will want to update this
+            '{{ cookiecutter.repo_name }}={{ cookiecutter.repo_name }}.main:main', # You will want to update this
         ],
     },
     {%- endif %}
@@ -75,9 +75,11 @@ setup(
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.3',
         'Programming Language :: Python :: 3.4',
+        'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3.6',
         'Topic :: Internet :: WWW/HTTP',
     ],
     test_suite='tests',
     tests_require=test_requirements,
-    cmdclass={'test':PyTest},
+    cmdclass={'test': PyTest},
 )

@@ -5,5 +5,5 @@ tds-ssl-certifi
 {%- endif %}
 {% if cookiecutter.script == "y" -%}
 click
-schedule
+apscheduler
 {%- endif %}
