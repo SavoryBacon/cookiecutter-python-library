@@ -13,8 +13,7 @@ Types of Contributions
 Report Bugs
 ~~~~~~~~~~~
 
-Report bugs at https://github.com/{{ cookiecutter.username }}/{{
-cookiecutter.repo_name }}/issues.
+Report bugs at {{ cookiecutter.username }}@tdstelecom.com
 
 If you are reporting a bug, please include:
 
@@ -25,26 +24,25 @@ If you are reporting a bug, please include:
 Fix Bugs
 ~~~~~~~~
 
-Look through the GitHub issues for bugs. Anything tagged with "bug"
-is open to whoever wants to implement it.
+Look through the Gitlab or JIRA issues for bugs. Feel free to snag
+anything not currently being worked on.
 
 Implement Features
 ~~~~~~~~~~~~~~~~~~
 
-Look through the GitHub issues for features. Anything tagged with "feature"
-is open to whoever wants to implement it.
+Look through the Gitlab or JIRA issues for features. Feel free to snag
+anything not currently being worked on.
 
 Write Documentation
 ~~~~~~~~~~~~~~~~~~~
 
-Health Check could always use more documentation, whether as part of the
-official Health Check docs, in docstrings, or even on the web in blog posts,
-articles, and such.
+{{ cookiecutter.project_name }} could always use more documentation, whether as part of the
+official project docs, in docstrings, or even on a team Wiki or Sharepoint.
 
 Submit Feedback
 ~~~~~~~~~~~~~~~
 
-The best way to send feedback is to file an issue at https://github.com/{{ cookiecutter.username }}/{{ cookiecutter.repo_name }}/issues.
+The best way to send feedback is to email {{ cookiecutter.username }}@tdstelecom.com.
 
 If you are proposing a feature:
 
@@ -58,15 +56,15 @@ Get Started!
 
 Ready to contribute? Here's how to set up `{{ cookiecutter.repo_name }}` for local development.
 
-1. Fork the `{{ cookiecutter.repo_name }}` repo on GitHub.
+1. Fork the `{{ cookiecutter.repo_name }}` repo on Gitlab.
 2. Clone your fork locally::
 
-    $ git clone git@github.com:your_name_here/health_check.git
+    $ git clone git@git.ent.tds.net:{{ cookiecutter.username }}/{{ cookiecutter.project_name }}.git
 
 3. Install your local copy into a virtualenv. Assuming you have virtualenvwrapper installed, this is how you set up your fork for local development::
 
-    $ mkvirtualenv {{ cookiecutter.repo_name }}
-    $ cd {{ cookiecutter.repo_name }}/
+    $ mkvirtualenv dev-{{ cookiecutter.project_name }}
+    $ cd {{ cookiecutter.project_name }}/
     $ python setup.py develop
 
 4. Create a branch for local development::
@@ -77,36 +75,30 @@ Ready to contribute? Here's how to set up `{{ cookiecutter.repo_name }}` for loc
 
 5. When you're done making changes, check that your changes pass flake8 and the tests, including testing other Python versions with tox::
 
-    $ flake8 {{ cookiecutter.repo_name }} tests
     $ python setup.py test
-    $ tox
 
-   To get flake8 and tox, just pip install them into your virtualenv.
-
-6. Commit your changes and push your branch to GitHub::
+6. Commit your changes and push your branch to Gitlab::
 
     $ git add .
     $ git commit -m "Your detailed description of your changes."
     $ git push origin name-of-your-bugfix-or-feature
 
-7. Submit a pull request through the GitHub website.
+7. Submit a merge request through the Gitlab website.
 
-Pull Request Guidelines
+Merge Request Guidelines
 -----------------------
 
-Before you submit a pull request, check that it meets these guidelines:
+Before you submit a merge request, check that it meets these guidelines:
 
 1. The pull request should include tests.
 2. If the pull request adds functionality, the docs should be updated. Put
    your new functionality into a function with a docstring, and add the
    feature to the list in README.rst.
-3. The pull request should work for Python 2.6, 2.7, 3.3, and 3.4, and for PyPy. Check
-   https://travis-ci.org/usragg/health_check/pull_requests
-   and make sure that the tests pass for all supported Python versions.
+3. The pull request should work for Python 2.7+, and 3.4+, and for PyPi.
 
 Tips
 ----
 
 To run a subset of tests::
 
-    $ python -m unittest tests.test_{{ cookiecutter.repo_name }}
+    $ python -m unittest tests.{{ cookiecutter.repo_name }}.test_{{ cookiecutter.repo_name }}

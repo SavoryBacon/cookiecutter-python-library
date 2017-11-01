@@ -55,15 +55,15 @@ test-all:
 	tox
 
 coverage:
-	coverage run --source health_check setup.py test
+	coverage run --source {{ cookiecutter.repo_name }} setup.py test
 	coverage report -m
 	coverage html
 	$(BROWSER) htmlcov/index.html
 
 docs:
-	rm -f docs/health_check.rst
+	rm -f docs/{{ cookiecutter.repo_name }}.rst
 	rm -f docs/modules.rst
-	sphinx-apidoc -o docs/ health_check
+	sphinx-apidoc -o docs/ {{ cookiecutter.repo_name }}
 	$(MAKE) -C docs clean
 	$(MAKE) -C docs html
 	$(BROWSER) docs/_build/html/index.html

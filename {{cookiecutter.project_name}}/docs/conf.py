@@ -58,7 +58,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'{{ cookiecutter.repo_name }}'
-copyright = u'{{ cookiecutter.year }}, {{ cookiecutter.author_name }}'
+copyright = u'{{ cookiecutter.year }}, TDS Telecom'
 
 # The version info for the project you're documenting, acts as replacement
 # for |version| and |release|, also used in various other places throughout
