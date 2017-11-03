@@ -43,7 +43,7 @@ setup(
     description="{{ cookiecutter.description }}",
     long_description=readme + '\n\n' + history,
     author="{{ cookiecutter.author_name }}",
-    author_email='{{ cookiecutter.username }}@tdstelecom.com',
+    author_email='{{ cookiecutter.email }}',
     url='https://wiki.tds.net/display/admnetapps/{{ cookiecutter.project_name }}',
     packages=[
         '{{ cookiecutter.repo_name }}',
