@@ -13,7 +13,7 @@ Types of Contributions
 Report Bugs
 ~~~~~~~~~~~
 
-Report bugs at {{ cookiecutter.username }}@tdstelecom.com
+Report bugs at {{ cookiecutter.email }}
 
 If you are reporting a bug, please include:
 
