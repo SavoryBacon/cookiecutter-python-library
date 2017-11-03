@@ -10,7 +10,7 @@ class Emailer(object):
     def __init__(self, sender=None, email_server=None, recipient_list=None):
         self.sender = str(sender) if sender is not None else '{}@{}'.format(__name__.split('.')[0], socket.getfqdn())
         self.email_server = str(email_server) if email_server is not None else 'localhost'
-        raw_recipient_list = recipient_list if recipient_list is not None else ['{{ cookiecutter.username }}@tdstelecom.com',]
+        raw_recipient_list = recipient_list if recipient_list is not None else ['{{ cookiecutter.email }}',]
         self.recipient_list = list(raw_recipient_list) if not isinstance(raw_recipient_list, list) else raw_recipient_list
 
     def send_email(
