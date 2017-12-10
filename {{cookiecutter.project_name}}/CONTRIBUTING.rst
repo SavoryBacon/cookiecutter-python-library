@@ -42,7 +42,7 @@ official project docs, in docstrings, or even on a team Wiki or Sharepoint.
 Submit Feedback
 ~~~~~~~~~~~~~~~
 
-The best way to send feedback is to email {{ cookiecutter.username }}@tdstelecom.com.
+The best way to send feedback is to email {{ cookiecutter.email }}
 
 If you are proposing a feature:
 
@@ -59,7 +59,7 @@ Ready to contribute? Here's how to set up `{{ cookiecutter.repo_name }}` for loc
 1. Fork the `{{ cookiecutter.repo_name }}` repo on Gitlab.
 2. Clone your fork locally::
 
-    $ git clone git@git.ent.tds.net:{{ cookiecutter.username }}/{{ cookiecutter.project_name }}.git
+    $ git clone <project location>.git
 
 3. Install your local copy into a virtualenv. Assuming you have virtualenvwrapper installed, this is how you set up your fork for local development::
 
